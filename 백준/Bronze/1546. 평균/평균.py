@@ -1,8 +1,9 @@
 N = int(input())
-scores = list(map(int, input().split()))
-M = max(scores)
+A = list(map(int, input().split()))
+M = max(A)
+B = []
 
-for i in range(N):
-    scores[i] = scores[i]/M*100
+for num in A:
+    B.append(num/M*100)
 
-print(sum(scores)/N)
+print(sum(B)/N)
